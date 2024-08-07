@@ -55,46 +55,6 @@
   }
   
   /* Additional .section styles to ensure unique shapes */
-  @for $i from 1 through 10 {
-    .section:nth-of-type(#{$i}) {
+    .section {
       @include random-corner-polygon(80px);
     }
-  }
-  
-p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 80px;
-    font-size:24px;
-}
-h3 {
-    font-size:40px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:60px;
-    position:relative;
-    top:60px;
-}
-.firstPar {
-    position:relative;
-    top: 100px;
-    right:-200px;
-    transform:rotate(-10deg);
-    width:300px;
-    display:block; 
-}
-.secondPar {
-    position:relative;
-    top: 100px;
-    right:-800px;
-    transform:rotate(10deg);
-    width:300px;
-    display:block; 
-}
-.thirdPar {
-    position:relative;
-    top: 100px;
-    right:-400px;
-    transform:rotate(-5deg);
-    width:300px;
-    display:block; 
-}
-
