@@ -1,0 +1,121 @@
+/* Existing Styles with Enhancements */
+
+.header {
+    width: 100%;
+    height: 130px;
+    background: linear-gradient(135deg, #50a748, #31750f);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #8B5E3C;
+    /*border-image: url('assets/border.png') 30 round; /* Use a natural border image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index:9999;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url('assets/motif.png') repeat;  Use a subtle motif image */
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.logoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    opacity: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 501;
+}
+
+.menu {
+    z-index: 902;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 2rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b0f3a2;
+}
+
+/* New Decorations and Enhancements */
+
+.header-decorations {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 0;
+}
+
+.header-decorations img {
+    width: 100px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header-decorations img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.tractor {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.tent {
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
+}
+
+.campfire {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

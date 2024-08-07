@@ -1,0 +1,100 @@
+@function random-percentage($min, $max) {
+    @return random($max - $min + 1) + $min - 1 + "%";
+  }
+  
+  @mixin random-corner-polygon($corner-radius) {
+    --top-left-x: #{random-percentage(0, 5)};
+    --top-left-y: #{random-percentage(0, 5)};
+    --top-right-x: #{random-percentage(95, 100)};
+    --top-right-y: #{random-percentage(0, 5)};
+    --bottom-right-x: #{random-percentage(95, 100)};
+    --bottom-right-y: #{random-percentage(95, 100)};
+    --bottom-left-x: #{random-percentage(0, 5)};
+    --bottom-left-y: #{random-percentage(95, 100)};
+  
+    clip-path: polygon(
+      var(--top-left-x) var(--top-left-y),
+      var(--top-right-x) var(--top-right-y),
+      var(--bottom-right-x) var(--bottom-right-y),
+      var(--bottom-left-x) var(--bottom-left-y)
+    );
+  
+    @if $corner-radius {
+      border-radius: $corner-radius;
+    }
+  }
+
+  .section {
+    width: 100%;
+    max-width: 1450px;
+    height: 800px;
+    overflow: visible;
+    background-color: #ecf8eb;
+    margin: 200px auto 0 auto;
+    position: relative;
+    padding: 20px;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    //   background: url('assets/motif.png') repeat;
+      opacity: 0.1;
+      z-index: 1;
+      clip-path: inherit; /* Inherit the same clip-path from the parent */
+    }
+  
+    @include random-corner-polygon(80px); /* Apply the mixin with a 20px border-radius */
+  }
+  
+  .section + .section {
+    @include random-corner-polygon(80px); /* Apply the mixin with a 20px border-radius */
+  }
+  
+  /* Additional .section styles to ensure unique shapes */
+  @for $i from 1 through 10 {
+    .section:nth-of-type(#{$i}) {
+      @include random-corner-polygon(80px);
+    }
+  }
+  
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 80px;
+    font-size:24px;
+}
+h3 {
+    font-size:40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:60px;
+    position:relative;
+    top:60px;
+}
+.firstPar {
+    position:relative;
+    top: 100px;
+    right:-200px;
+    transform:rotate(-10deg);
+    width:300px;
+    display:block; 
+}
+.secondPar {
+    position:relative;
+    top: 100px;
+    right:-800px;
+    transform:rotate(10deg);
+    width:300px;
+    display:block; 
+}
+.thirdPar {
+    position:relative;
+    top: 100px;
+    right:-400px;
+    transform:rotate(-5deg);
+    width:300px;
+    display:block; 
+}
+
