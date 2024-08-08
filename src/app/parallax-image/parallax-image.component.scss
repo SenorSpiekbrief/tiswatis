@@ -1,0 +1,19 @@
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+}
+
+.parallax-container img {
+    position: absolute;
+    width: 100%; /* Adjust as needed */
+    height: auto;
+    top: 0;
+    left: 0;
+}
+.custom-dialog-container .mat-dialog-container {
+    padding: 0;
+    border-radius: 8px;
+    background: transparent;
+    box-shadow: none;
+}

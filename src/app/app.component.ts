@@ -8,11 +8,12 @@ import { ActivitySectionComponent } from './sections/activity-section/activity-s
 import { OmgevingSectionComponent } from './sections/omgeving-section/omgeving-section.component';
 import { TarievenSectionComponent } from './sections/tarieven-section/tarieven-section.component';
 import { SectionComponent } from './sections/section/section.component';
+import { ParallaxImageComponent } from './parallax-image/parallax-image.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderBarComponent,WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent],
+  imports: [RouterOutlet,HeaderBarComponent,WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent,ParallaxImageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
