@@ -19,4 +19,73 @@ import { ParallaxImageComponent } from './parallax-image/parallax-image.componen
 })
 export class AppComponent {
   title = 'tiswatis';
+  images = [{
+    imageSrc: 'assets/foto/a.jpg',
+    top:5,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/b.jpg',
+    top:300,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/c.jpg',
+    top:600,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/d.jpg',
+    top:900,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/e.jpg',
+    top:1200,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/f.jpg',
+    top:1500,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/g.jpg',
+    top:1800,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/h.jpg',
+    top:2100,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/i.jpg',
+    top:2400,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/j.jpg',
+    top:2700,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/k.jpg',
+    top:3000,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/l.jpg',
+    top:3300,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/m.jpg',
+    top:3600,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/n.jpg',
+    top:3900,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/o.jpg',
+    top:4200,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/p.jpg',
+    top:4500,
+    left:5,
+  },{
+    imageSrc: 'assets/foto/q.jpg',
+    top:4800,
+    left:5,
+  }];
 }
