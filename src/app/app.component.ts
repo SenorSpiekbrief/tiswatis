@@ -28,64 +28,52 @@ export class AppComponent {
     top:300,
     left:5,
   },{
-    imageSrc: 'assets/foto/c.jpg',
+    imageSrc: 'assets/foto/g.jpg',
     top:600,
     left:5,
   },{
-    imageSrc: 'assets/foto/d.jpg',
+    imageSrc: 'assets/foto/h.jpg',
     top:900,
     left:5,
   },{
-    imageSrc: 'assets/foto/e.jpg',
+    imageSrc: 'assets/foto/i.jpg',
     top:1200,
     left:5,
   },{
-    imageSrc: 'assets/foto/f.jpg',
+    imageSrc: 'assets/foto/j.jpg',
     top:1500,
     left:5,
   },{
-    imageSrc: 'assets/foto/g.jpg',
+    imageSrc: 'assets/foto/k.jpg',
     top:1800,
     left:5,
   },{
-    imageSrc: 'assets/foto/h.jpg',
+    imageSrc: 'assets/foto/l.jpg',
     top:2100,
     left:5,
   },{
-    imageSrc: 'assets/foto/i.jpg',
+    imageSrc: 'assets/foto/m.jpg',
     top:2400,
     left:5,
   },{
-    imageSrc: 'assets/foto/j.jpg',
+    imageSrc: 'assets/foto/n.jpg',
     top:2700,
     left:5,
   },{
-    imageSrc: 'assets/foto/k.jpg',
+    imageSrc: 'assets/foto/o.jpg',
     top:3000,
     left:5,
   },{
-    imageSrc: 'assets/foto/l.jpg',
+    imageSrc: 'assets/foto/p.jpg',
     top:3300,
     left:5,
   },{
-    imageSrc: 'assets/foto/m.jpg',
+    imageSrc: 'assets/foto/q.jpg',
     top:3600,
     left:5,
   },{
-    imageSrc: 'assets/foto/n.jpg',
+    imageSrc: 'assets/foto/r.jpg',
     top:3900,
-    left:5,
-  },{
-    imageSrc: 'assets/foto/o.jpg',
-    top:4200,
-    left:5,
-  },{
-    imageSrc: 'assets/foto/p.jpg',
-    top:4500,
-    left:5,
-  },{
-    imageSrc: 'assets/foto/q.jpg',
-    top:4800,
     left:5,
   }];
 }

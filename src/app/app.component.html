@@ -1,13 +1,16 @@
 
 <app-header-bar></app-header-bar>
 <router-outlet />
+<div class="imageReel">
 @for (image of images; track image) {
     <app-parallax-image [style]="{position:'absolute'}" [imageSrc]="image.imageSrc" [top]="image.top" [left]="image.left"></app-parallax-image>
   }
-<app-section ><app-welcome-section></app-welcome-section></app-section>
-<app-section ><app-accomodation-section></app-accomodation-section></app-section>
-<app-section ><app-tarieven-section></app-tarieven-section></app-section>
-<app-section ><app-activity-section></app-activity-section></app-section>
-<app-section ><app-omgeving-section></app-omgeving-section></app-section>
-<app-section ><app-contact-section></app-contact-section></app-section>
-
+</div>
+<div class="textReel">
+  <app-section ><app-welcome-section></app-welcome-section></app-section>
+  <app-section ><app-accomodation-section></app-accomodation-section></app-section>
+  <app-section ><app-tarieven-section></app-tarieven-section></app-section>
+  <app-section ><app-activity-section></app-activity-section></app-section>
+  <app-section ><app-omgeving-section></app-omgeving-section></app-section>
+  <app-section ><app-contact-section></app-contact-section></app-section>
+</div>

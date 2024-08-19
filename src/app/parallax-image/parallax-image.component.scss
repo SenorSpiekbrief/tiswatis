@@ -1,7 +1,7 @@
 .parallax-container {
     position: relative;
-    overflow: hidden;
-    height: 100vh; /* Full viewport height */
+    overflow: visible;
+    height: auto; /* Full viewport height */
 }
 
 .parallax-container img {
