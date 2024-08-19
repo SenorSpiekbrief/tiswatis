@@ -60,20 +60,16 @@ export class AppComponent {
     top:2700,
     left:5,
   },{
-    imageSrc: 'assets/foto/o.jpg',
+    imageSrc: 'assets/foto/q.jpg',
     top:3000,
     left:5,
   },{
-    imageSrc: 'assets/foto/p.jpg',
+    imageSrc: 'assets/foto/d.jpg',
     top:3300,
     left:5,
   },{
-    imageSrc: 'assets/foto/q.jpg',
+    imageSrc: 'assets/foto/e.jpg',
     top:3600,
-    left:5,
-  },{
-    imageSrc: 'assets/foto/r.jpg',
-    top:3900,
     left:5,
   }];
 }

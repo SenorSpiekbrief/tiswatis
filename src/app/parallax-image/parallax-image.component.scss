@@ -1,7 +1,7 @@
 .parallax-container {
     position: relative;
     overflow: visible;
-    height: auto; /* Full viewport height */
+    height: 200px; /* Full viewport height */
 }
 
 .parallax-container img {
@@ -10,6 +10,7 @@
     height: auto;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 .custom-dialog-container .mat-dialog-container {
     padding: 0;
