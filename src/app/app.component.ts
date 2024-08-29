@@ -7,7 +7,6 @@ import { AccomodationSectionComponent } from './sections/accomodation-section/ac
 import { ActivitySectionComponent } from './sections/activity-section/activity-section.component';
 import { OmgevingSectionComponent } from './sections/omgeving-section/omgeving-section.component';
 import { TarievenSectionComponent } from './sections/tarieven-section/tarieven-section.component';
-import { DraggableConsoleComponent } from './drag-console/drag-console.component';
  
 import { SectionComponent } from './sections/section/section.component';
 import { ParallaxImageComponent } from './parallax-image/parallax-image.component';
@@ -15,7 +14,7 @@ import { ParallaxImageComponent } from './parallax-image/parallax-image.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderBarComponent,DraggableConsoleComponent,WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent,ParallaxImageComponent],
+  imports: [RouterOutlet,HeaderBarComponent,WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent,ParallaxImageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
