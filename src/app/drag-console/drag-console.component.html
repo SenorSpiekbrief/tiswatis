@@ -1,0 +1,20 @@
+<div *ngIf="isVisible" class="console-window" [class.minimized]="isMinimized" cdkDrag>
+    <div class="console-header" cdkDragHandle>
+      <span>Console</span>
+      <button (click)="toggleMinimize()">
+        {{ isMinimized ? 'Maximize' : 'Minimize' }}
+      </button>
+    </div>
+    <div class="console-body" *ngIf="!isMinimized">
+      <div class="output">
+        <div *ngFor="let output of commandOutputs">{{ output }}</div>
+      </div>
+      <input
+        type="text"
+        [(ngModel)]="commandInput"
+        (keydown.enter)="executeCommand()"
+        placeholder="Enter command"
+      />
+    </div>
+  </div>
+  
