@@ -10,11 +10,12 @@ import { TarievenSectionComponent } from './sections/tarieven-section/tarieven-s
  
 import { SectionComponent } from './sections/section/section.component';
 import { ParallaxImageComponent } from './parallax-image/parallax-image.component';
+import { DraggableConsoleComponent } from "./drag-console/drag-console.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HeaderBarComponent,WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent,ParallaxImageComponent],
+  imports: [RouterOutlet, HeaderBarComponent, WelcomeSectionComponent, ContactSectionComponent, AccomodationSectionComponent, ActivitySectionComponent, OmgevingSectionComponent, TarievenSectionComponent, SectionComponent, ParallaxImageComponent, DraggableConsoleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
