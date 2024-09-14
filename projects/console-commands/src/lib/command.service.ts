@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { PopupStateService } from './popup-state.service';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 export class CommandService {
   private commandOutputs$ = new BehaviorSubject<string[]>([]);
 
-  constructor() {}
+  constructor(private popupStateService: PopupStateService) {}
 
   // Function to execute commands
   executeCommand(command: string) {
@@ -18,12 +19,15 @@ export class CommandService {
     switch (commandLower) {
       case 'help':
         outputs.push('Opening help popup...');
+        this.popupStateService.openHelpPopup();
         break;
       case 'chat':
         outputs.push('Opening chat popup...');
+        this.popupStateService.openChatPopup();
         break;
       case 'config':
         outputs.push('Opening config popup...');
+        this.popupStateService.openConfigPopup();
         break;
       case 'mine':
         outputs.push('Mining started...');

@@ -2,14 +2,16 @@ import { Component, HostListener } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { CommandService } from 'console-commands'; // Import from the named library
+import { CommandService, HelpPopupComponent, ConfigPopupComponent, ChatPopupComponent } from 'console-commands'; // Import from the named library
+
+
 
 @Component({
   selector: 'app-draggable-console',
   standalone: true,
   templateUrl: './drag-console.component.html',
   styleUrls: ['./drag-console.component.scss'],
-  imports: [NgFor, NgIf, FormsModule, DragDropModule],
+  imports: [NgFor, NgIf, FormsModule, DragDropModule, HelpPopupComponent, ConfigPopupComponent, ChatPopupComponent],
 })
 export class DraggableConsoleComponent {
   isVisible = false;
@@ -21,7 +23,7 @@ export class DraggableConsoleComponent {
 
   constructor(private commandService: CommandService) {
     // Subscribe to command outputs from the service
-    this.commandService.getCommandOutputs().subscribe(outputs => {
+    this.commandService.getCommandOutputs().subscribe((outputs: any) => {
       this.commandOutputs = outputs;
     });
   }
@@ -29,10 +31,10 @@ export class DraggableConsoleComponent {
   @HostListener('window:keydown', ['$event'])
   onKeyDown(event: KeyboardEvent) {
     this.keysPressed.add(event.key.toLowerCase());
-
     // Detect the key combination, e.g., 'Ctrl + Shift + C'
     if (this.keysPressed.has('control') && this.keysPressed.has('shift') && this.keysPressed.has('c')) {
       this.toggleVisibility();
+      this.keysPressed = new Set();
     }
   }
 

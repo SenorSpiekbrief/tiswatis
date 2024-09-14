@@ -28,6 +28,7 @@ export class PopupStateService {
   }
 
   closeHelpPopup() {
+    console.log('hit')
     this.showHelpPopup$.next(false);
   }
 
